@@ -1,0 +1,14 @@
+snippet cmpp Component with props
+  type Props = {}
+
+  export const $1: React.FC<Props> = ({}) => {
+    return <div>$1</div>
+  }
+
+snippet cmp Component
+	export const $1: React.FC = () => {
+		return <div>$1</div>
+	}
+
+snippet clog console.log
+	console.log("$1", $1)
