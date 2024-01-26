@@ -2,13 +2,7 @@ echo "Installing Homebrew"
 if which brew >/dev/null; then
 	echo "Homebrew is already installed"
 else
-  if [ -d "/opt/homebrew" ]; then
-    # M1 Mac
-    export BREW_PATH="/opt/homebrew"
-  else
-    # Intel Mac
-    export BREW_PATH="/usr/local"
-  fi
+  export BREW_PATH="/opt/homebrew"
 	echo "Installing Homebrew"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$($BREW_PATH/bin/brew shellenv)"
@@ -51,8 +45,6 @@ git config --global core.excludesfile ~/.gitignore
 git config --global init.defaultBranch main
 git config --global core.editor nvim
 defaults write -g ApplePressAndHoldEnabled -bool false
-
-tic ~/.config/screen-256color.terminfo
 
 echo "Removing all persisted apps from Dock"
 defaults write com.apple.dock persistent-apps -array
