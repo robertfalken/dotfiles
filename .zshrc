@@ -5,11 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-for file in ~/.config/zsh/*; do
-  source "$file"
-done
+source "/Users/rf/.config/zsh/aliases"
+source "/Users/rf/.config/zsh/exports"
 
-eval "$($BREW_PATH/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
 eval "$(rbenv init -)"
 
