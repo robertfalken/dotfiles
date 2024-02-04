@@ -1,3 +1,6 @@
+echo "Email address for git commits?"
+read email
+
 echo "Installing Homebrew"
 if which brew >/dev/null; then
 	echo "Homebrew is already installed"
@@ -40,7 +43,7 @@ npm install -g typescript typescript-language-server @tailwindcss/language-serve
 # Set configuration
 echo "Applying settings"
 git config --global user.name "robfalken"
-git config --global user.email hello@robfalken.co
+git config --global user.email $email
 git config --global core.excludesfile ~/.gitignore
 git config --global init.defaultBranch main
 git config --global core.editor nvim
