@@ -16,6 +16,7 @@ return {
 				file_ignore_patterns = {
 					"%.git",
 					"target/debug",
+					"node_modules",
 					".DS_Store",
 				},
 				mappings = {
