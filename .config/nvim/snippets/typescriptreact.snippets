@@ -1,12 +1,32 @@
 snippet cmpp Component with props
+	import React from "react";
+
   type Props = {}
 
   export const $1: React.FC<Props> = ({}) => {
     return <div>$1</div>
   }
 
+snippet cmppc Component with props and children
+	import React, { PropsWithChildren } from "react";
+
+  type Props = {}
+
+  export const $1: React.FC<PropsWithChildren<Props>> = ({ children }) => {
+    return <div>{children}</div>
+  }
+
 snippet cmp Component
+	import React from "react";
+
 	export const $1: React.FC = () => {
+		return <div>$1</div>
+	}
+
+snippet cmpc Component with children
+	import React, { PropsWithChildren } from "react";
+
+	export const $1: React.FC<PropsWithChildren> = () => {
 		return <div>$1</div>
 	}
 

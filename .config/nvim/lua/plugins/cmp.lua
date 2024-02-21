@@ -103,7 +103,7 @@ return {
 			end
 			require("cmp").setup(opts)
 
-			local colors = require("tokyonight.colors").setup()
+			require("tokyonight.colors").setup()
 		end,
 	},
 }
