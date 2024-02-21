@@ -5,12 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source "/Users/rf/.config/zsh/aliases"
 source "/Users/rf/.config/zsh/exports"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(direnv hook zsh)"
-eval "$(rbenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -19,7 +14,14 @@ export NVM_DIR="$HOME/.nvm"
 ZSH_THEME="robbyrussell"
 DISABLE_AUTO_TITLE="true"
 plugins=(git colored-man-pages docker npm nvm sudo zsh-autosuggestions zsh-syntax-highlighting)
+
 source $ZSH/oh-my-zsh.sh
+source "/Users/rf/.config/zsh/aliases"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(direnv hook zsh)"
+eval "$(rbenv init -)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # powerlevel10k - To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
