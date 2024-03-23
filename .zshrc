@@ -27,4 +27,8 @@ eval "$(zoxide init --cmd cd zsh)"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+skhd --start-service
+yabai --start-service
+brew services start sketchybar > /dev/null
+
 unset ZSH_AUTOSUGGEST_USE_ASYNC

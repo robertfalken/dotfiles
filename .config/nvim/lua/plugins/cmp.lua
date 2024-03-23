@@ -31,6 +31,7 @@ return {
 			local cmp = require("cmp")
 			local defaults = require("cmp.config.default")()
 			return {
+				preselect = cmp.PreselectMode.None,
 				window = {
 					completion = {
 						border = border,
@@ -45,8 +46,8 @@ return {
 						side_padding = 0,
 					},
 				},
-				mpletion = {
-					completeopt = "menu,menuone,noinsert",
+				completion = {
+					-- completeopt = "menu,menuone,noinsert,noselect",
 				},
 				snippet = {
 					expand = function(args)
@@ -61,7 +62,7 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-					["<tab>"] = cmp.mapping.confirm({
+					["<C-y>"] = cmp.mapping.confirm({
 						behavior = cmp.ConfirmBehavior.Replace,
 						select = true,
 					}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
