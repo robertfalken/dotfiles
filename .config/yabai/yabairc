@@ -1,0 +1,8 @@
+yabai -m config       \
+  layout bsp          \
+  window_gap      10  \
+  bottom_padding  10  \
+  left_padding    10  \
+  right_padding   10  \
+  external_bar all:60:0
+
