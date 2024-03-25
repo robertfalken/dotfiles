@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source "/Users/rf/.config/zsh/exports"
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$BREW_PATH/opt/nvm/nvm.sh" ] && \. "$BREW_PATH/opt/nvm/nvm.sh"
