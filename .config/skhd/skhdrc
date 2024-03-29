@@ -1,5 +1,11 @@
 hyper - f : yabai -m window --toggle float
+
 hyper - h : yabai -m window --focus west
 hyper - j : yabai -m window --focus south
 hyper - k : yabai -m window --focus north
 hyper - l : yabai -m window --focus east
+
+hyper - z : yabai -m window --toggle zoom-parent
+
+hyper - 0x18 : yabai -m window --resize right:100:0 # plus key
+hyper - 0x1B : yabai -m window --resize right:-100:0 # minus key
