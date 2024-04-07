@@ -47,5 +47,8 @@ vim.filetype.add({
 	pattern = {
 		["+..env.?"] = "sh",
 		["~/.config/zsh/.*"] = "sh",
+		[".+.mdx"] = "markdown",
 	},
 })
+
+vim.cmd([[autocmd! FileType markdown setlocal textwidth=100]])
