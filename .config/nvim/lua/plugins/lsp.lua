@@ -72,6 +72,9 @@ return {
 						workspace = {
 							checkThirdParty = false,
 						},
+						diagnostics = {
+							globals = { "sbar" },
+						},
 					},
 				},
 			})
