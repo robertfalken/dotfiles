@@ -103,8 +103,6 @@ return {
 				source.group_index = source.group_index or 1
 			end
 			require("cmp").setup(opts)
-
-			require("tokyonight.colors").setup()
 		end,
 	},
 }

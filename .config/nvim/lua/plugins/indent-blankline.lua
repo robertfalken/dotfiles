@@ -1,13 +1,13 @@
 return {
 	"lukas-reineke/indent-blankline.nvim",
 	config = function()
-		local colors = require("tokyonight.colors").default
+		local colors = require("rose-pine.palette")
 		local highlight = { "IndentBlankLine" }
 		local hooks = require("ibl.hooks")
 
 		hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-			vim.api.nvim_set_hl(0, "IndentBlankLine", { fg = colors.bg_dark })
-			vim.api.nvim_set_hl(0, "IndentBlankLineScope", { fg = colors.blue0 })
+			vim.api.nvim_set_hl(0, "IndentBlankLine", { fg = colors.highlight_med })
+			vim.api.nvim_set_hl(0, "IndentBlankLineScope", { fg = colors.muted })
 		end)
 
 		require("ibl").setup({
