@@ -26,8 +26,6 @@ sbar.add("bracket", { clock.name, calendar.name }, {
 	background = theme.bracket.background,
 })
 
-sbar.add("item", { width = settings.spacing, position = "right" })
-
 local function update_time()
 	local time = os.date("%H:%M")
 	clock:set({ label = time })

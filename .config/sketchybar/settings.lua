@@ -3,6 +3,6 @@ return {
 		text = "SF Pro",
 		icon = "Hack Nerd Font",
 	},
-	padding = 4,
-	spacing = 16,
+	padding = 0,
+	spacing = 0,
 }

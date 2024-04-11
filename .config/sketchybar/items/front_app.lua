@@ -3,12 +3,8 @@ local icons = require("icons")
 local settings = require("settings")
 local theme = require("theme")
 
-sbar.add("item", {
-	width = 24,
-})
-
 local front_app = sbar.add("item", {
-	padding_left = 3,
+	padding_left = 0,
 	icon = {
 		drawing = true,
 		padding_left = settings.padding,
@@ -35,7 +31,7 @@ local yabai_float = sbar.add("item", {
 })
 
 local yabai_zoom = sbar.add("item", {
-	padding_left = -18,
+	padding_left = 0,
 	y_offset = 6,
 	background = {
 		padding_right = 0,

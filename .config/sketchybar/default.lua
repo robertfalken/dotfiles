@@ -29,6 +29,6 @@ sbar.default({
 		corner_radius = 9,
 		border_width = 2,
 	},
-	padding_left = 5,
-	padding_right = 5,
+	padding_left = 0,
+	padding_right = 0,
 })

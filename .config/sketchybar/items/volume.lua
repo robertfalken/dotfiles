@@ -3,8 +3,6 @@ local colors = require("colors")
 local settings = require("settings")
 local theme = require("theme")
 
-sbar.add("item", { position = "right", width = settings.spacing })
-
 local volume = sbar.add("item", {
 	position = "right",
 	background = theme.bracket.background,

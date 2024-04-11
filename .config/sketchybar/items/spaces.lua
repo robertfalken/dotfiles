@@ -20,7 +20,7 @@ for i = 1, 10, 1 do
 			string = icons.spaces[i] or i,
 			color = colors.text,
 			highlight_color = colors.love,
-			padding_right = 10,
+			padding_right = 0,
 		},
 		label = {
 			drawing = false,
