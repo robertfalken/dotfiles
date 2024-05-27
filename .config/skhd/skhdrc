@@ -12,3 +12,5 @@ hyper - 0x1B : yabai -m window --resize right:-100:0 # minus key
 
 hyper - 0x21 : yabai -m window --swap west # Left bracket ([)
 hyper - 0x1E : yabai -m window --swap east # Right bracket (])
+
+hyper - s : yabai -m window --resize abs:1280:720
