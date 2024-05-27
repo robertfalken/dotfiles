@@ -1,8 +1,42 @@
 [
   {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-s": "workspace::Save",
+      "ctrl-\\": "pane::SplitRight",
+      "ctrl-c a": "editor::ToggleCodeActions",
+      "ctrl-c r": "editor::Rename",
+      "ctrl-space ctrl-space": "pane::AlternateFile"
+    }
+  },
+  {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "k j": ["vim::SwitchMode", "Normal"]
+      "k j": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      ">": "editor::Indent",
+      "<": "editor::Outdent"
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "ctrl-i": "editor::ConfirmCompletion",
+      "tab": ["workspace::SendKeystrokes", "\t"],
+      "enter": ["workspace::SendKeystrokes", "\n"]
+    }
+  },
+  {
+    "context": "Dock && !Terminal Panel", // In "Terminal Panel" I want to be able to `ctrl-w` without latency.
+    "bindings": {
+      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"]
     }
   }
 ]
