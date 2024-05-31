@@ -4,7 +4,7 @@
     "show": false
   },
   "terminal": {
-    "font_family": "Zed Mono"
+    "font_family": "ZedMono Nerd Font"
   },
   "project_panel": {
     "dock": "right"

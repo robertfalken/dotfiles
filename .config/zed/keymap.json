@@ -3,10 +3,16 @@
     "context": "Editor",
     "bindings": {
       "ctrl-s": "workspace::Save",
-      "ctrl-\\": "pane::SplitRight",
+      "ctrl-\\": "pane::SplitLeft",
       "ctrl-c a": "editor::ToggleCodeActions",
       "ctrl-c r": "editor::Rename",
       "ctrl-space ctrl-space": "pane::AlternateFile"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "g i": "editor::GoToImplementation"
     }
   },
   {
