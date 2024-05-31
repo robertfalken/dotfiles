@@ -1,12 +1,12 @@
 ZSH_THEME="robbyrussell"
 DISABLE_AUTO_TITLE="true"
-plugins=(git colored-man-pages docker npm nvm sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(1password git colored-man-pages docker npm nvm sudo zsh-autosuggestions zsh-syntax-highlighting)
 
 source "/Users/rf/.oh-my-zsh/oh-my-zsh.sh"
 source "/Users/rf/.config/zsh/aliases"
 
-eval "$(starship init zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 eval "$(rbenv init -)"
 eval "$(zoxide init --cmd cd zsh)"
