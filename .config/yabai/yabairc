@@ -1,8 +1,17 @@
 yabai -m space 1 --label home
-yabai -m space 2 --label terminal
-yabai -m space 3 --label focus
-yabai -m space 4 --label chat
-yabai -m space 5 --label music
+yabai -m space 2 --label development
+yabai -m space 3 --label chat
+yabai -m space 4 --label music
+yabai -m space 5 --label photography
+
+yabai -m rule --add app="System Settings" manage=off
+yabai -m rule --add app="kitty" space="development"
+yabai -m rule --add app="Zed" space="development"
+yabai -m rule --add app="Slack" space="chat"
+yabai -m rule --add app="Discord" space="chat"
+yabai -m rule --add app="Messages" space="chat"
+yabai -m rule --add app="Spotify" space="music"
+yabai -m rule --add app="Adobe Lightroom" space="photography"
 
 yabai -m config       \
   layout bsp          \
@@ -12,5 +21,4 @@ yabai -m config       \
   right_padding   8  \
   external_bar all:50:0
 
-yabai -m space 3 --padding abs:0:10:1000:1000
 borders active_color=0xFFeb6f92 inactive_color=0x33ea9a97 width=8.0
